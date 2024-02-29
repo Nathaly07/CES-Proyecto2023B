@@ -11,12 +11,20 @@ import { actionFormValidationSchema } from "../validations";
 function Calculator() {
   const [form, setForm] = useState(initialActionFormState);
   const [stocks, setStocks] = useState([]);
+  const [selectedStock, setSelectedStock] = useState(null);
+
 
   const calculateSalePrice = (purchasePricePerShare, quantityOfShares) => {
     const calculatedSalePrice = Number(purchasePricePerShare) * Number(quantityOfShares);
     return calculatedSalePrice;
   };
 
+  
+  const handleDelete = (stockId) => {
+    const updatedStocks = stocks.filter((stock) => stock.id !== stockId);
+    setStocks(updatedStocks);
+  };
+  
   const {
     handleSubmit,
     handleChange,
@@ -107,7 +115,7 @@ function Calculator() {
 
           <div className="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-8">
             <button type="submit" className="flex-2 btn btn-primary">
-              Calcular
+              Registrar
             </button>
             <button
               type="button"
@@ -126,7 +134,7 @@ function Calculator() {
     <div className="mx-auto max-w-2xl rounded-3xl ring-1 ring-gray-200 dark:ring-gray-700 sm:mt-13 mt-16 lg:mx-0 lg:flex lg:max-w-none">
         {/* ... formulario */}
 
-        <StockTable stocks={stocks} /> {/* Renderiza la tabla */}
+        <StockTable stocks={stocks} onDelete={handleDelete}/> {/* Renderiza la tabla */}
     </div>
     </>
     
