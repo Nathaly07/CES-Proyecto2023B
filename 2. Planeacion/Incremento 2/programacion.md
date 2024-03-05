@@ -7,18 +7,21 @@
 ### Grupo: 3
 
 ### Integrantes
+
 - Nardy Cachipuendo
 - Cristofer Paucar
 - Nathaly Simba
   
 # Programación (Incremento 2)
 
-### Detalles del Segundo Incremento
+## Detalles del Segundo Incremento
+
 - **Nombre del Incremento**: Implementación de Funcionalidades Adicionales
 - **Fecha de Inicio**: 19 de febrero de 2024
 - **Fecha de Finalización Estimada**: 6 de marzo de 2024
 
 ### Tareas Programadas
+
 1. Analisis de los nuevos requerimientos solicitados
    - Fecha de Inicio: 19 de febrero de 2024
    - Fecha de Finalización: 21 de febrero de 2024
@@ -37,10 +40,8 @@
 6. Desarrollo de codificación.
    - Fecha de Inicio: 1 de febrero de 2024
    - Fecha de Finalización: 4 de marzo de 2024
-7.  Implementacion de pruebas
-   - Fecha de Inicio: 4 de marzo de 2024
-   - Fecha de Finalización: 5 de marzo de 2024
-8. Entrega de proyecto
+7. Implementacion de pruebas.
+    - Fecha de Inicio: 4 de marzo de 2024
+    - Fecha de Finalización: 5 de marzo de 2024
+8. Entrega de proyecto.
    - Fecha de Finalización: 6 de marzo de 2024
-
-

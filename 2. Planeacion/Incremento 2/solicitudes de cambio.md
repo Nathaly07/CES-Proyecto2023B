@@ -7,6 +7,7 @@
 ### Grupo: 3
 
 ### Integrantes
+
 - Nardy Cachipuendo
 - Cristofer Paucar
 - Nathaly Simba
@@ -68,4 +69,3 @@ Esta funcionalidad permitirá a los usuarios organizar los datos de acuerdo a su
  Se debe incorporar la persistencia de datos en el sistema. Esto garantizará que la información registrada en la aplicación se conserve de manera segura.
 
 ---------------------
-

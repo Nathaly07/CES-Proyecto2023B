@@ -7,6 +7,7 @@
 ### Grupo: 3
 
 ### Integrantes
+
 - Nardy Cachipuendo
 - Cristofer Paucar
 - Nathaly Simba
@@ -14,11 +15,13 @@
 ## Programación (Incremento 1)
 
 ### Detalles del Primer Incremento
+
 - **Nombre del Incremento**: Compra y Venta de Acciones
 - **Fecha de Inicio**: 25 de diciembre de 2023
 - **Fecha de Finalización Estimada**: 11 de enero de 2024
 
 ### Tareas Programadas
+
 1. Investigación y planificación del proyecto
    - Fecha de Inicio: 25 de diciembre de 2023
    - Fecha de Finalización: 29 de diciembre de 2023

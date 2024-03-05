@@ -7,6 +7,7 @@
 ### Grupo: 3
 
 ### Integrantes
+
 - Nardy Cachipuendo
 - Cristofer Paucar
 - Nathaly Simba
@@ -14,15 +15,17 @@
 # Estimación del Proyecto
 
 ## Detalles del Proyecto
+
 - **Nombre del Proyecto**: Compra y Venta de Acciones
-- **Fecha de Inicio**: 
-- **Fecha de Finalización Estimada**: 
+- **Fecha de Inicio**:
+- **Fecha de Finalización Estimada**:
 
 ## Descripcion del proyecto
+
 El proyecto permitirá al usuario visualizar las acciones registradas, agregar nuevas acciones automáticamente ingresando los datos en cada campo y eliminarlas según sea necesario. Una vez que se haya ingresado toda la información, el sistema calculará automáticamente el costo total de la compra.
 
-
 ## Estimación del Esfuerzo
+
 - **Duración Estimada del Proyecto**: 2 semanas y 3 dias.
 - **Equipo de Proyecto**:
   - Desarrollador: 1 persona
@@ -32,4 +35,3 @@ El proyecto permitirá al usuario visualizar las acciones registradas, agregar n
   - Desarrollor: 60 horas
   - Diseño UI/UX: 40 horas
   - Gestión de Proyecto: 30 horas
-
