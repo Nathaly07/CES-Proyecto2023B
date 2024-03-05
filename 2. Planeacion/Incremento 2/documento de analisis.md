@@ -4,7 +4,7 @@
     Construcción y Evolución de Software<br>
 </h1>
 
-### Grupo: 4
+### Grupo: 3
 
 ### Integrantes
 - Nardy Cachipuendo
@@ -16,7 +16,7 @@
 
 **Número de CR:** CR01
 
-**Fecha**: [Fecha en que se realizó la solicitud]
+**Fecha**: 8 de febrero de 2024
 
 **Sistema/Proyecto:** Compra y Venta de Acciones
 
@@ -53,7 +53,7 @@
 
 **Número de CR:** CR02
 
-**Fecha**: [Fecha en que se realizó la solicitud]
+**Fecha**: 8 de febrero de 2024
 
 **Sistema/Proyecto:** Compra y Venta de Acciones
 
@@ -90,7 +90,7 @@
 
 **Número de CR:** CR03
 
-**Fecha**: [Fecha en que se realizó la solicitud]
+**Fecha**: 8 de febrero de 2024
 
 **Sistema/Proyecto:** Compra y Venta de Acciones
 
