@@ -40,7 +40,49 @@ function PurchasedStockTable (){
     }
   };
 
+  const handleFilter = async (filterType) => { // Accepts filter type as an argument
+    try {
+      const baseUrl = 'http://localhost:4000/api/stocks';
+      const endpoint = filterType === 'price' ? '/price' : ''; // Construct endpoint based on filterType
+      const url = `${baseUrl}${endpoint}`;
+  
+      const response = await fetch(url, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+  
+      if (response.ok) {
+        const data = await response.json();
+        setStocks(data.stocks);
+        console.log(stocks);
+      } else {
+        console.error('Error filtering stocks:', response.status);
+      }
+    } catch (error) {
+      console.error('Error filtering stocks:', error);
+    }
+  };
+
   return (
+    <>
+    
+    <div className="flex justify-start">
+      <button
+        className="btn btn-primary btn-xs mx-auto w-1/5 my-3"
+        onClick={() => handleFilter('price')} // Pass filter type ('price')
+      >
+        Filtrar por Precio
+      </button>
+      <button
+        className="btn btn-primary btn-xs mx-auto w-1/5 my-3"
+        onClick={() => handleFilter('name')}  // Pass filter type ('name')
+      >
+        Filtrar por Nombre
+      </button>
+    </div>
+
     <table className="min-w-full divide-y divide-gray-200 ring-gray-200 dark:ring-gray-700 rounded-md ">
       <thead className="bg-gray-50 dark:bg-slate-900">
         <tr>
@@ -73,6 +115,8 @@ function PurchasedStockTable (){
         ))}
       </tbody>
     </table>
+    
+    </>
   );
 }
 

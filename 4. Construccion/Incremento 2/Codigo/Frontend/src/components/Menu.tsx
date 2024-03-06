@@ -2,7 +2,7 @@ import StockTable from './StockTable';
 import PurchasedStockTable from './PurchasedStockTable';
 
 function Menu() {
-    const stockSymbols = ['AAPL']; // Agrega más símbolos según tus necesidades
+    const stockSymbols = ['AAPL', 'GOOGL', 'MSFT', 'INTC']; // Agrega más símbolos según tus necesidades
 
 
   return (
