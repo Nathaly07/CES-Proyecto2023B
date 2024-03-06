@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function PurchasedStockTable (){
+const PurchasedStockTable = ( {actualStocks}) =>{
   const [stocks, setStocks] = useState([]);
 
   useEffect(() => {
@@ -91,6 +91,8 @@ function PurchasedStockTable (){
           <th className="px-6 py-3 text-left text-xs font-medium text-brand uppercase tracking-wider">Precio de Compra por Acción</th>
           <th className="px-6 py-3 text-left text-xs font-medium text-brand uppercase tracking-wider">Cantidad de Acciones</th>
           <th className="px-6 py-3 text-left text-xs font-medium text-brand uppercase tracking-wider rounded-tr-xl">Costo Total de Compra</th>
+          <th className="px-6 py-3 text-left text-xs font-medium text-brand uppercase tracking-wider rounded-tr-xl">Cambio</th>
+          <th className="px-6 py-3 text-left text-xs font-medium text-brand uppercase tracking-wider rounded-tr-xl">Ganancia/Perdida</th>
           <th className="px-6 py-3 text-left text-xs font-medium text-brand uppercase tracking-wider">Acciones</th>
         </tr>
       </thead>
@@ -105,6 +107,24 @@ function PurchasedStockTable (){
             <td className="px-6 py-4 whitespace-nowrap dark:text-white">{stock.quantity}</td>
             <td className="px-6 py-4 whitespace-nowrap dark:text-white">
               {stock.purchasePrice.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}
+            </td>
+            <td className="px-6 py-4 whitespace-nowrap dark:text-white">
+              {actualStocks.find((stockItem) => stockItem.symbol === stock.symbol) ? (
+                <span className="text-green-500">
+                  {actualStocks.find((stockItem) => stockItem.symbol === stock.symbol).change}
+                </span>
+              ) : (
+                <span className="text-red-500">Sin datos</span>
+              )}
+            </td>
+            <td className="px-6 py-4 whitespace-nowrap dark:text-white">
+              {actualStocks.find((stockItem) => stockItem.symbol === stock.symbol) ? (
+                <span className="text-green-500">
+                  {(actualStocks.find((stockItem) => stockItem.symbol === stock.symbol).price - stock.pricePerShare).toFixed(2) }
+                </span>
+              ) : (
+                <span className="text-red-500">Sin datos</span>
+              )}
             </td>
             <td className="px-6 py-4 whitespace-nowrap dark:text-white">
             

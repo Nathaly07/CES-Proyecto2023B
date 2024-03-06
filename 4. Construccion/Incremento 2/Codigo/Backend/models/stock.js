@@ -27,6 +27,7 @@ const stockSchema = new Schema({
         type: Number,
         required: true
     }
+
 })
 
 module.exports = mongoose.model('Stock', stockSchema)

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PurchasedStockTable from './PurchasedStockTable';
 
 
 const StockTable = ({ stockSymbols }) => {
@@ -13,7 +14,7 @@ const StockTable = ({ stockSymbols }) => {
     async function fetchStockData(symbol) {
       try {
         const response = await fetch(
-          `https://financialmodelingprep.com/api/v3/quote/${symbol}?apikey=vNRx1MDQ0j0g3wJbR4FZIOeLOBqHrJMG`
+          `https://financialmodelingprep.com/api/v3/quote/${symbol}?apikey=6TSQqiaRWUXuPLTVcSk7BY0H257Tw4xs`
         );
         const data = await response.json();
         //console.log(data);
@@ -62,6 +63,7 @@ const StockTable = ({ stockSymbols }) => {
     // Calcular la fecha actual
     const currentDate = new Date().toISOString().split('T')[0];
     const purchasePrice = selectedStock.price * quantity;
+    const gain_loss = 0;
 
     const purchaseData = {
       symbol: selectedStock.symbol,
@@ -69,7 +71,7 @@ const StockTable = ({ stockSymbols }) => {
       purchaseDate: currentDate,
       pricePerShare: selectedStock.price,
       quantity: quantity,
-      purchasePrice: purchasePrice,
+      purchasePrice: purchasePrice
     };
 
     try {
@@ -186,6 +188,10 @@ const StockTable = ({ stockSymbols }) => {
             </div>
         </div> 
       )}
+
+        <h1 className="text-3xl font-bold tracking-tight text-brand sm:text-4xl text-center">Compras</h1>
+        
+        <PurchasedStockTable actualStocks={stocks} />
     </div>
   );
 };
