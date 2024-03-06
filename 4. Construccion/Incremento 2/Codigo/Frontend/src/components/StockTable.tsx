@@ -120,8 +120,8 @@ const StockTable = ({ stockSymbols }) => {
             <td className="px-6 py-4 whitespace-nowrap dark:text-white">{stock.price}</td>
             <td className="px-6 py-4 whitespace-nowrap dark:text-white">{stock.changesPercentage}</td>
             <td className="px-6 py-4 whitespace-nowrap dark:text-white">{stock.change}</td>
-            <td className="px-6 py-4 whitespace-nowrap dark:text-white">{stock.dayLow}</td>
-            <td className="px-6 py-4 whitespace-nowrap dark:text-white">{stock.dayHigh}</td>
+            <td className="px-6 py-4 whitespace-nowrap dark:text-white">{stock.dayLow.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</td>
+            <td className="px-6 py-4 whitespace-nowrap dark:text-white">{stock.dayHigh.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</td>
             <td className="px-6 py-4 whitespace-nowrap dark:text-white">{stock.volume}</td>
 
           </tr>

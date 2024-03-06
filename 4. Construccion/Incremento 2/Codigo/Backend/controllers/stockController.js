@@ -4,13 +4,24 @@ const mongoose = require('mongoose');
 // obtener todos los stocks
 const getStocks = async (req, res) => {
     try {
-        const stocks = await Stock.find().sort({symbol: -1});
+        const stocks = await Stock.find().sort({symbol: 1});
         res.status(200).json({stocks});
     } catch (error) {
         console.error(error.message);
         res.status(400).json({error: error.message});
     }
-}   
+}  
+
+// obtener todos los stocks
+const getStocksByPricePerShare = async (req, res) => {
+    try {
+        const stocks = await Stock.find().sort({pricePerShare: 1});
+        res.status(200).json({stocks});
+    } catch (error) {
+        console.error(error.message);
+        res.status(400).json({error: error.message});
+    }
+}  
 
 // obtener un solo stock
 const getStock = async (req, res) => {
@@ -93,5 +104,6 @@ module.exports = {
     getStock,
     getStocks,
     updateStock,
-    deleteStock
+    deleteStock,
+    getStocksByPricePerShare
 }
