@@ -38,6 +38,8 @@
 | 02         | Hitorias de usuario      | 1.0         | Corrección            |
 | 03         | Diseño de interfaz   | 1.0           | Mejora                |
 | 04         | Documento de estimación   | 1.0           | Correción                |
+| 05         | Arquitectura   | 1.0           | Correción                |
+| 04         | Casos de uso   | 1.0           | Correción                |
 
 **Esfuerzo Estimado:** Se estima que la implementación de las alternativas requerirá aproximadamente 15 horas de trabajo.
 
