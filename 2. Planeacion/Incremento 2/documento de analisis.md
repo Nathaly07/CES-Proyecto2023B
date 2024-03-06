@@ -119,7 +119,7 @@
 
 **Impacto en el cronograma:** Se espera que el impacto en el cronograma no sea muy significativo.
 
-**Impacto en el costo:** Se requiere el uso de base de datos para almacenar la informacion de preferencia MYSQL.
+**Impacto en el costo:** Se requiere el uso de base de datos para almacenar la informacion de preferencia MongoDB.
 
 **Recomendación**
 Se recomienda proceder con la implementación de las alternativas propuestas.
